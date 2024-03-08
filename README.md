@@ -1,3 +1,7 @@
+
+#Attention!!
+All data in the master branch！
+
 # MultiMET 
 This is the official implementation for “MultiMET: A Multimodal Dataset for Metaphor Understanding
  ” (ACL2021)
