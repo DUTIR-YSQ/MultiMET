@@ -16,3 +16,18 @@ Data Collection
 
 # Citation
 Dongyu Zhang, Minghao Zhang, Heting Zhang, Liang Yang, and Hongfei Lin. 2021. MultiMET: A Multimodal Dataset for Metaphor Understanding. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pages 3214–3225, Online. Association for Computational Linguistics.
+
+## 🔬 Explore More Research from Our Lab
+
+1. **[MultiMET: A Multimodal Dataset for Metaphor Understanding (ACL 2021)](https://github.com/DUTIR-YSQ/MultiMET)**  
+   A foundational multimodal dataset for metaphor understanding, combining text and visual modalities.
+
+2. **[Cultural Bias Matters: A Cross-Cultural Benchmark Dataset and Sentiment-Enriched Model for Understanding Multimodal Metaphors (ACL 2025)](https://github.com/DUTIR-YSQ/MultiMM)**  
+   A cross-cultural benchmark dataset that incorporates sentiment signals to improve multimodal metaphor detection across languages.
+
+3. **[EmoMeta: A Chinese Multimodal Metaphor Dataset and Novel Method for Emotion Classification (WWW 2025)](https://github.com/DUTIR-YSQ/EmoMeta)**  
+   A new Chinese dataset and method for emotion classification based on multimodal metaphors.
+
+4. **[MultiCMET: A Novel Chinese Benchmark for Understanding Multimodal Metaphor (EMNLP 2023)](https://github.com/DUTIR-YSQ/MultiCMET)**  
+   A high-quality Chinese benchmark designed to support multimodal metaphor understanding in NLP and vision-language tasks.
+
