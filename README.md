@@ -1,21 +1,69 @@
-# MultiMET 
-This is the official implementation for “MultiMET: A Multimodal Dataset for Metaphor Understanding
- ” (ACL2021)
+# 📦 MultiMET
 
-# Info
+**Official Repository for**  
+**_“MultiMET: A Multimodal Dataset for Metaphor Understanding”_**  
+📄 *ACL 2021, Long Papers*
 
-we introduce MultiMET, a novel multimodal metaphor dataset to facilitate understanding metaphorical information from multimodal text and image. It contains 10,437 text-image pairs from a range of sources with multimodal annotations of the occurrence of metaphors, domain relations, sentiments metaphors convey, and author intents. MultiMET opens the door to automatic metaphor understanding by investigating multimodal cues and their interplay. Moreover, we propose a range of strong baselines and show the importance of combining multimodal cues for metaphor understanding. 
+---
 
-Data Collection 
+## 🧠 Overview
 
-1.The first part, named 'ads.xlsx'.The first column is the ID of the image, which can be found in the folder "ads" for the corresponding row of images.  The second column contains image links, which can be used to access the images.The third column represents the category, with the metaphorical label being "1" and the literal meaning label being "0". The fourth and fifth columns represent the source and target domains. The sixth column is the type of emotion, including VN=very negative; N=negative; Z=natural; P=positive; VP=very positive. The seventh column is the text in the image.
+**MultiMET** is a novel **multimodal metaphor dataset** designed to facilitate metaphor understanding from both text and image. It consists of **10,437** text-image pairs annotated with:
 
-2.The second part is named "Facebook_pic_solved. xlsx". The first column is the ID of the image, which can be found in the folder "Facebook_pic_solved". The second column is the text. The third column represents the category, with a metaphorical label of "1" and a literal label of "0". The fourth column indicates whether it is a textual metaphor. The fifth column represents categories, where 1, 2, and 3 respectively represent 1: text dominant, 2: image dominant, and 3: completeness. The sixth and eighth columns represent the source and target domains, while the seventh and ninth columns represent the modal information of the source and target domains, where 1, 2, and 3 represent: 1: text, 2: image, and 3: text+image, respectively. The 10th column represents sentiment classification, 1: very negative, 2: negative, 3: neutral, 4: positive, 5: very positive. The 11th list diagram includes: 1: supervisory, 2: informative, and 3: expressive.
+- Metaphor occurrence  
+- Source and target domains  
+- Emotion polarity  
+- Author intent  
 
-3.The third part is named "Twitter_pic_solved. xlsx". The first column is the ID of the image, which can be found in the folder "Facebook_pic_solved". The second column is the text. The third column represents the category, with a metaphorical label of "1" and a literal label of "0". The fourth column indicates whether it is a textual metaphor. The fifth column represents categories, where 1, 2, and 3 respectively represent 1: text dominant, 2: image dominant, and 3: completeness. The sixth and eighth columns represent the source and target domains, while the seventh and ninth columns represent the modal information of the source and target domains, where 1, 2, and 3 represent: 1: text, 2: image, and 3: text+image, respectively. The 10th column represents sentiment classification, 1: very negative, 2: negative, 3: neutral, 4: positive, 5: very positive. The 11th list diagram includes: 1: supervisory, 2: informative, and 3: expressive.
+We also introduce a suite of strong baseline models to demonstrate the importance of multimodal fusion in metaphor comprehension.
 
-# Citation
-Dongyu Zhang, Minghao Zhang, Heting Zhang, Liang Yang, and Hongfei Lin. 2021. MultiMET: A Multimodal Dataset for Metaphor Understanding. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pages 3214–3225, Online. Association for Computational Linguistics.
+---
+
+## 📂 Dataset Structure
+
+### 1. `ads.xlsx`
+| Column | Description |
+|--------|-------------|
+| 1 | Image ID (refer to folder `ads/`) |
+| 2 | Image URL |
+| 3 | Category (1 = metaphorical, 0 = literal) |
+| 4–5 | Source and Target Domains |
+| 6 | Emotion (VN, N, Z, P, VP) |
+| 7 | Text in image |
+
+### 2. `Facebook_pic_solved.xlsx`
+| Column | Description |
+|--------|-------------|
+| 1 | Image ID (refer to `Facebook_pic_solved/`) |
+| 2 | Text |
+| 3 | Category (1 = metaphorical, 0 = literal) |
+| 4 | Is textual metaphor (0/1) |
+| 5 | Type: 1=text-dominant, 2=image-dominant, 3=balanced |
+| 6–9 | Source/Target Domains + Modal Types (1=text, 2=image, 3=both) |
+| 10 | Sentiment (1–5 = very negative to very positive) |
+| 11 | Intent (1=supervisory, 2=informative, 3=expressive) |
+
+### 3. `Twitter_pic_solved.xlsx`
+Same structure as `Facebook_pic_solved.xlsx`.
+
+---
+
+## 📈 Citation
+
+If you use **MultiMET** in your work, please cite:
+
+<pre>
+<code>
+@inproceedings{zhang2021multimet,
+  title     = {MultiMET: A multimodal dataset for metaphor understanding},
+  author    = {Zhang, Dongyu and Zhang, Minghao and Zhang, Heting and Yang, Liang and Lin, Hongfei},
+  booktitle = {Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)},
+  pages     = {3214--3225},
+  year      = {2021}
+}
+</code>
+</pre>
+
 
 ## 🔬 Explore More Research from Our Lab
 
@@ -41,5 +89,40 @@ Dongyu Zhang, Minghao Zhang, Heting Zhang, Liang Yang, and Hongfei Lin. 2021. M
    **Citation Format**:  
    Zhang, D., Yu, J., Jin, S., Yang, L., & Lin, H. (2023, December). Multicmet: A novel Chinese benchmark for understanding multimodal metaphor. In Findings of the Association for Computational Linguistics: EMNLP 2023 (pp. 6141-6154).
 
----
 
+### 📚 References (BibTeX)
+
+```bibtex
+@inproceedings{zhang2021multimet,
+  title     = {MultiMET: A multimodal dataset for metaphor understanding},
+  author    = {Zhang, Dongyu and Zhang, Minghao and Zhang, Heting and Yang, Liang and Lin, Hongfei},
+  booktitle = {Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)},
+  pages     = {3214--3225},
+  year      = {2021}
+}
+
+@inproceedings{yang2025cultural,
+  title     = {Cultural Bias Matters: A Cross-Cultural Benchmark Dataset and Sentiment-Enriched Model for Understanding Multimodal Metaphors},
+  author    = {Yang, Senqi and Zhang, Dongyu and Ren, Jing and Xu, Ziqi and Zhang, Xiuzhen and Song, Yiliao and Lin, Hongfei and Xia, Feng},
+  booktitle = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages     = {XX--XX},
+  year      = {2025},
+  address   = {Vienna, Austria},
+  publisher = {Association for Computational Linguistics}
+}
+
+@inproceedings{lu2025emometa,
+  title     = {EmoMeta: A Multimodal Dataset for Fine-grained Emotion Classification in Chinese Metaphors},
+  author    = {Lu, Xingyuan and Liu, Yuxi and Zhang, Dongyu and Wu, Zhiyao and Ren, Jing and Xia, Feng},
+  booktitle = {Companion Proceedings of the ACM on Web Conference 2025},
+  pages     = {3080--3083},
+  year      = {2025}
+}
+
+@inproceedings{zhang2023multicmet,
+  title     = {Multicmet: A novel chinese benchmark for understanding multimodal metaphor},
+  author    = {Zhang, Dongyu and Yu, Jingwei and Jin, Senyuan and Yang, Liang and Lin, Hongfei},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2023},
+  pages     = {6141--6154},
+  year      = {2023}
+}
